@@ -1,5 +1,5 @@
 <?php
-$conn = new mysqli("sql.freedb.tech", "freedb_neeraj", "uNx3qPqs7#Ezy3!", "freedb_MyWebsite");
+$conn = new mysqli(getenv("DB_HOST"), getenv("DB_USER"), getenv("DB_PASS"), getenv("DB_NAME"));
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];
     $email    = $_POST["email"];
