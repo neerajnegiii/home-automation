@@ -1,6 +1,6 @@
 <?php
 session_start();
-$conn = new mysqli("localhost", "root", "", "MyWebsite");
+$conn = new mysqli("sql.freedb.tech", "freedb_neeraj", "uNx3qPqs7#Ezy3!", "freedb_MyWebsite");
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = $_POST["username"];

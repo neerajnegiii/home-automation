@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "esp_relay_system";
+$servername = "sql.freedb.tech";
+$username = "freedb_neeraj";
+$password = "uNx3qPqs7#Ezy3!";
+$dbname = "freedb_MyWebsite";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
